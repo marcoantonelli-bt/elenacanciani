@@ -1,0 +1,20 @@
+.c-citazione {
+	background-color: #fff;
+	padding: vwd(20) 0;
+	margin: vwd(30) 0;
+
+	&__contenuto {
+		&--immagine {
+			width: 80%;
+		}
+	}
+	&__testo {
+		font-style: italic;
+	}
+	&__fonte {
+		text-align: right;
+	}
+	&__immagine {
+		width: 15%;
+	}
+}

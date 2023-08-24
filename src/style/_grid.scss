@@ -1,0 +1,36 @@
+.c-container {
+  position: relative;
+  width: vwd(1200);
+	margin: 0 auto;
+  
+  &--flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &--inverted {
+    flex-direction: row-reverse;
+  }
+  @include mq-max(bk('tab-down')){
+    width: 90%;
+  }
+  &__inner {
+    padding: 0 vwd(75);
+    @include mq-max(bk('tab-down')) {
+      padding: 0;
+    }
+  }
+}
+
+.c-col {
+  &--one-third {
+    width: 31%;
+  }
+  &--two-third {
+    width: 64%;
+  }
+  &--one-half {
+    width: 48%;
+  }
+}

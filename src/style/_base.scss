@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font_default, sans-serif;
+  background-color: $bianco;
+  color: $nero;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0 !important;
+  font-size: vwd(20);
+  line-height: 1.2;
+}
+
+main {
+  position: relative;
+  overflow-x: hidden;
+  padding-top: vwd(100);
+  background: $grigio_chiaro;
+  min-height: calc(100vh - #{vwd(120)});
+  @include mq-max(bk('tab-down')) {
+    padding-top: vwm(100);
+  }
+}
+
+a {
+  color: $nero;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+

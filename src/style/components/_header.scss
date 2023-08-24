@@ -1,0 +1,235 @@
+.c-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	transition: all .3s;
+  background-color: $bianco;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.07);
+
+  &.is-scroll {
+		background-color: rgba($bianco, 0.6);
+	}
+	.scroll-down & {
+		transform: translateY(-110%);
+	}
+	.scroll-up & {
+		transform: translateY(0);
+	}
+	.c-nav-open & {
+		transform: translateY(0);
+	}
+}
+
+.c-nav {
+  @include mq-max(bk('tab-down')) {
+    display: none;
+  }
+	&__links {
+		display: flex;
+    list-style-type: none;
+		a {
+			display: block;
+			color: $nero;
+			text-decoration: none;
+      text-transform: uppercase;
+		}
+		li {
+      padding: vwd(12);
+      position: relative;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+			&.current-menu-item {
+				& > a {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+  .sub-menu {
+    display: none;
+    position: absolute;
+    top: vwd(36);
+    padding: vwd(30);
+    left: vwd(-24);
+    .c-nav__item {
+      padding: vwd(16) 0!important;
+    }
+  }
+  .menu-item-has-children:hover {
+    .sub-menu {
+      display: block;
+    }
+  }
+  .menu-item-has-children:hover {
+    .sub-menu {
+      display: block;
+    }
+  }
+  &__container {
+		display: flex;
+		align-items: center;
+    justify-content: space-between;
+	}
+	&__logo {
+		width: vwd(231);
+    a {
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: none;
+      color: $verde;
+    }
+	}
+}
+
+.c-mobile-nav {
+  display: none;
+  background-color: #D5D5D5;
+  @include mq-max(bk('tab-down')) {
+    display: block;
+  }
+  &__container {
+    background-color: #D5D5D5;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    transform: translateX( -100%);
+    transition: all .3s;
+    z-index: -1;
+  }
+  &__links {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    a {
+			display: block;
+			color: $nero;
+			font-size: vwm(18);
+			line-height: 2;
+			text-decoration: none;
+		}
+		li {
+			&.current-menu-item {
+				& > a {
+					text-decoration: underline;
+				}
+			}
+		}
+  }
+  &__socials {
+		display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: vwm(25);
+    li {
+      margin-right: vwm(15);
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+		a {
+			display: flex;
+      width: vwm(35);
+      height: vwm(35);
+      svg {
+        width: 100%;
+        height: 100%;
+        path {
+          fill:$nero;
+        }
+      }
+		}
+	}
+  &__logo {
+		width: vwm(90);
+		transition: all .3s;
+    margin: vwm(12) 0;
+		svg {
+			width: 100%;
+		}
+	}
+}
+
+
+.c-nav-toggle {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  z-index: 100;
+  float: right;
+  top: vwm(20);
+  right: 0;
+
+  @include mq-max(bk('tab-down')){
+    display: block;
+  }
+
+  .c-nav-toggle__container {
+    transform-style: preserve-3d;
+    width: vwm(30);
+    height: vwm(16);    
+	}
+  span {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $nero;
+    transition: all 0.3s;
+    &:first-child {
+      top: 0;
+    }
+    &:nth-child(2) {
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:last-child {
+      width: 100%;
+      bottom: 0;
+     
+    }
+  }
+}
+
+.is-menu-open {
+  .c-nav-toggle {
+    span {
+      background-color: $nero;
+      width: 100%!important;
+      display: none;
+      &:first-child {
+        transform: rotate(-45deg);
+        top: vwm(9);
+        display: block;
+      }
+      
+      &:last-child {
+        transform: rotate(45deg);
+        bottom: vwm(6);
+        display: block;
+      }
+    }
+  }
+  .c-mobile-nav__container {
+    transform: translateX(0%);
+  }
+}

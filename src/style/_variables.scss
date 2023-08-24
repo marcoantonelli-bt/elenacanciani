@@ -1,0 +1,30 @@
+// Fonts
+//////////////////////////////////////////////////////////
+
+$font_default: 'Raleway', sans-serif;
+
+// Colors
+//////////////////////////////////////////////////////////
+
+$color_primary: red;
+$blu_scuro: #083d5e;
+$verde: #37a9b5;
+$grigio_chiaro: #f3f5fb;
+$grigio_scuro: #212529;
+$bianco: #ffffff;
+$nero: $grigio_scuro;
+
+// Sizes
+//////////////////////////////////////////////////////////
+
+$size_desk_max: 1920;
+$size_mobile_max: 360;
+
+$size_breakpoints: (
+  mobile: 580px,
+  tab-down: 767px,
+  desk-tab: 998px,
+  desk-down: 1280px,
+  desk-medium: 1600px,
+  desk-large: 1920px
+);

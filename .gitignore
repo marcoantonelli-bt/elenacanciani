@@ -1,0 +1,9 @@
+node_modules
+*.log
+.DS_Store
+.wideo.json
+*.lock
+assets
+build
+cache
+docker/wordpress
