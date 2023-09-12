@@ -25,5 +25,13 @@
 				'immagine' => get_sub_field('immagine'),
 			));
 		} 
+		else if( get_row_layout() == 'hero' ){
+			component('hero', array(
+				'immagine' => get_sub_field('immagine'),
+				'sopratitolo' => get_sub_field('sopratitolo'),
+				'titolo' => get_sub_field('titolo'),
+				'testo' => get_sub_field('testo'),
+			));
+		} 
 	endwhile;
 ?>	

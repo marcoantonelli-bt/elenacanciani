@@ -21,7 +21,6 @@ main {
   position: relative;
   overflow-x: hidden;
   padding-top: vwd(100);
-  background: $grigio_chiaro;
   min-height: calc(100vh - #{vwd(120)});
   @include mq-max(bk('tab-down')) {
     padding-top: vwm(100);
