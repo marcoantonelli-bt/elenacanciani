@@ -62,8 +62,11 @@ body {
   position: relative;
   overflow-x: hidden;
   margin: 0 !important;
-  font-size: vwd(20);
+  font-size: vwd(24);
   line-height: 1.2;
+  @include mq-max(bk('tab-down')) {
+    font-size: vwm(24);
+  }
 }
 
 main {
@@ -72,7 +75,7 @@ main {
   padding-top: vwd(90);
   min-height: calc(100vh - #{vwd(120)});
   @include mq-max(bk('tab-down')) {
-    padding-top: vwm(90);
+    padding-top: vwm(60);
   }
 }
 
@@ -161,4 +164,35 @@ b, strong {
 
 em, i {
   font-style: italic;
+}
+
+@include mq-max(bk('tab-down')) {
+
+  h1 {
+    font-size: vwm(48);
+  }
+  
+  h2 {
+    font-size: vwm(36);
+  }
+  
+  h3 {
+    font-size: vwm(28);
+  }
+  
+  h4 {
+    font-size: vwm(24);
+  }
+  
+  h5 {
+    font-size: vwm(20);
+  }
+  
+  h6 {
+    font-size: vwm(18);
+  }
+  
+  p {
+    font-size: vwm(24);
+  }
 }

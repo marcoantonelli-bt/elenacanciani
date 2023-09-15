@@ -7,3 +7,9 @@
     text-align: center;
 	}
 }
+
+@include mq-max(bk('tab-down')) {
+	.c-footer {
+		padding: vwd(20) 0;
+	}
+}

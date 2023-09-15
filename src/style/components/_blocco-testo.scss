@@ -4,3 +4,9 @@
 		width: 100%;
 	}
 }
+
+@include mq-max(bk('tab-down')) {
+	.c-blocco-testo {
+		margin: vwm(30) 0;
+	}
+}

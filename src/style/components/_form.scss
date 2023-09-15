@@ -13,7 +13,7 @@
 			}
 			input[type=text], input[type=email], select, textarea {
 				width: 100%;
-				border: solid 1px $nero;
+				border: solid vwd(1) $nero;
 			}
 	
 		}
@@ -27,11 +27,38 @@
 			font-weight: bold;
 			border: solid vwd(4) $verde;
 			transition: all .3s;
-			font-size: vwd(16);
+			font-size: vwd(18);
 			&:hover {
 				color: $verde;
 				background-color: $bianco;
 				cursor: pointer;
+			}
+		}
+	}
+}
+
+@include mq-max(bk('tab-down')) {
+	.c-form {
+		padding: vwm(100) 0;
+		&__form {
+			p {
+				margin-bottom: vwm(15);
+			}
+			label {
+				font-size: vwm(18);
+				span {
+					margin-top: vwm(5);
+				}
+				input[type=text], input[type=email], select, textarea {
+					border: solid 1px $nero;
+				}
+		
+			}
+			input[type=submit] {
+				padding: vwm(20) vwm(30);
+				border-radius: vwm(25);
+				border: solid vwm(4) $verde;
+				font-size: vwm(18);
 			}
 		}
 	}

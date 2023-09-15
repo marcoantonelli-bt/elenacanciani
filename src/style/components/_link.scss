@@ -8,6 +8,7 @@
 	}
 	&__link {
     background: $verde;
+		font-size: vwd(18);
     padding: vwd(20) vwd(30);
     color: #fff;
     text-decoration: none;
@@ -19,6 +20,26 @@
 		&:hover {
 			color: $verde;
 			background-color: $bianco;
+		}
+	}
+}
+
+@include mq-max(bk('tab-down')) {
+	.c-link {
+		padding: vwm(20) 0;
+		&__container {
+			display: flex;
+			justify-content: space-evenly;
+			flex-direction: column;
+			align-items: center;
+			height: 100%;
+		}
+		&__link {
+			font-size: vwm(18);
+			padding: vwm(20) vwm(30);
+			border-radius: vwm(25);
+			border: solid vwm(4) $verde;
+			margin-bottom: 1em;
 		}
 	}
 }

@@ -1,3 +1,10 @@
 .c-testo-immagine {
 	margin: vwd(30) 0;
 }
+
+
+@include mq-max(bk('tab-down')) {
+	.c-testo-immagine {
+		margin: vwm(30) 0;
+	}
+}

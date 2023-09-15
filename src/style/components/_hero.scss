@@ -33,3 +33,17 @@
 		}
 	}
 }
+
+@include mq-max(bk('tab-down')) {
+	.c-hero {
+		height: vwm(320);
+		&__titolo {
+			font-size: vwm(40);
+			&:after {
+				height: vwm(3);
+				width: vwm(100);
+				margin-top: vwm(10);
+			}
+		}
+	}
+}
