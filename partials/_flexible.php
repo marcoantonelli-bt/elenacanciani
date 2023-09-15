@@ -18,6 +18,13 @@
 				'testo' => get_sub_field('testo'),
 			));
 		} 
+		else if( get_row_layout() == 'contatti' ){
+			component('contatti', array(
+				'titolo' => get_sub_field('titolo'),
+				'testo' => get_sub_field('testo'),
+				'form' => get_sub_field('form'),
+			));
+		} 
 		else if( get_row_layout() == 'citazione' ){
 			component('citazione', array(
 				'testo' => get_sub_field('testo'),
@@ -31,6 +38,11 @@
 				'sopratitolo' => get_sub_field('sopratitolo'),
 				'titolo' => get_sub_field('titolo'),
 				'testo' => get_sub_field('testo'),
+			));
+		} 
+		else if( get_row_layout() == 'link' ){
+			component('link', array(
+				'lista_link' => get_sub_field('lista_link'),
 			));
 		} 
 	endwhile;

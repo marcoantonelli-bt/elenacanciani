@@ -1,0 +1,24 @@
+.c-link {
+	padding: vwd(50) 0;
+	&__container {
+		display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+	}
+	&__link {
+    background: $verde;
+    padding: vwd(20) vwd(30);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: vwd(25);
+    font-weight: bold;
+		border: solid vwd(4) $verde;
+		transition: all .3s;
+		&:hover {
+			color: $verde;
+			background-color: $bianco;
+		}
+	}
+}

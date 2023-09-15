@@ -1,0 +1,38 @@
+.c-form {
+	padding: vwd(100) 0;
+	&__form {
+		p {
+			margin-bottom: vwd(15);
+		}
+		label {
+			display: block;
+			font-size: vwd(18);
+			span {
+				margin-top: vwd(5);
+				display: block;
+			}
+			input[type=text], input[type=email], select, textarea {
+				width: 100%;
+				border: solid 1px $nero;
+			}
+	
+		}
+		input[type=submit] {
+			background: $verde;
+			padding: vwd(20) vwd(30);
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			border-radius: vwd(25);
+			font-weight: bold;
+			border: solid vwd(4) $verde;
+			transition: all .3s;
+			font-size: vwd(16);
+			&:hover {
+				color: $verde;
+				background-color: $bianco;
+				cursor: pointer;
+			}
+		}
+	}
+}

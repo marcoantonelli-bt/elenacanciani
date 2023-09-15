@@ -11,8 +11,7 @@ VENGONO STAMPATI IN ASSENZA DI PARSER COME AUDITS O GTMETRIX
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,700;1,400&family=Noto+Serif:wght@300;400;900&display=swap" rel="stylesheet">
 <!--
 <link rel="preconnect" href="https://www.google-analytics.com">
 -->
