@@ -34,7 +34,7 @@
     list-style-type: none;
 		a {
 			display: block;
-			color: $nero;
+			color: $grigio_scuro;
 			text-decoration: none;
       text-transform: uppercase;
       font-size: vwd(18);
@@ -105,6 +105,9 @@
   @include mq-max(bk('tab-down')) {
     display: block;
   }
+  .sub-menu li a {
+    font-size: 0.8em;
+  }
   &__container {
     background-color: #D5D5D5;
     display: flex;
@@ -124,7 +127,7 @@
   }
   &__links {
     display: flex;
-    width: 100%;
+    width: 90%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -133,7 +136,7 @@
     text-align: center;
     a {
 			display: block;
-			color: $nero;
+			color: $grigio_scuro;
 			font-size: vwm(18);
 			line-height: 2;
 			text-decoration: none;
@@ -165,7 +168,7 @@
         width: 100%;
         height: 100%;
         path {
-          fill:$nero;
+          fill:$grigio_scuro;
         }
       }
 		}
@@ -209,7 +212,7 @@
     right: 0;
     width: 100%;
     height: 1px;
-    background-color: $nero;
+    background-color: $grigio_scuro;
     transition: all 0.3s;
     &:first-child {
       top: 0;
@@ -230,7 +233,7 @@
 .is-menu-open {
   .c-nav-toggle {
     span {
-      background-color: $nero;
+      background-color: $grigio_scuro;
       width: 100%!important;
       display: none;
       &:first-child {

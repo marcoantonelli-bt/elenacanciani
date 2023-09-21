@@ -13,7 +13,7 @@
 			}
 			input[type=text], input[type=email], select, textarea {
 				width: 100%;
-				border: solid vwd(1) $nero;
+				border: solid vwd(1) $grigio_scuro;
 			}
 	
 		}
@@ -50,7 +50,7 @@
 					margin-top: vwm(5);
 				}
 				input[type=text], input[type=email], select, textarea {
-					border: solid 1px $nero;
+					border: solid 1px $grigio_scuro;
 				}
 		
 			}

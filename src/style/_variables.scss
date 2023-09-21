@@ -1,6 +1,15 @@
 // Fonts
 //////////////////////////////////////////////////////////
 
+@font-face {
+  font-family: 'Benedict';
+  src: url('fonts/Benedict.woff2') format('woff2'),
+      url('fonts/Benedict.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 $font_default: 'Noto Sans', sans-serif;
 $font_serif: 'Noto Serif', serif;
 
@@ -9,11 +18,13 @@ $font_serif: 'Noto Serif', serif;
 
 $color_primary: red;
 $blu_scuro: #083d5e;
-$verde: #37a9b5;
 $grigio_chiaro: #f3f5fb;
 $grigio_scuro: #212529;
 $bianco: #ffffff;
-$nero: $grigio_scuro;
+$marrone: #8A817B;
+/* $verde: #37a9b5; */
+$verde: $marrone;
+$nero: #000000;
 
 // Sizes
 //////////////////////////////////////////////////////////

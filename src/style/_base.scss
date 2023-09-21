@@ -58,7 +58,7 @@ html, body {
 body {
   font-family: $font_default, sans-serif;
   background-color: $bianco;
-  color: $nero;
+  color: $grigio_scuro;
   position: relative;
   overflow-x: hidden;
   margin: 0 !important;
@@ -80,7 +80,7 @@ main {
 }
 
 a {
-  color: $nero;
+  color: $marrone;
 }
 
 img {
@@ -169,19 +169,19 @@ em, i {
 @include mq-max(bk('tab-down')) {
 
   h1 {
-    font-size: vwm(48);
+    font-size: vwm(40);
   }
   
   h2 {
-    font-size: vwm(36);
+    font-size: vwm(30);
   }
   
   h3 {
-    font-size: vwm(28);
+    font-size: vwm(26);
   }
   
   h4 {
-    font-size: vwm(24);
+    font-size: vwm(22);
   }
   
   h5 {
@@ -193,6 +193,6 @@ em, i {
   }
   
   p {
-    font-size: vwm(24);
+    font-size: vwm(20);
   }
 }

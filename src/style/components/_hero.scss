@@ -1,49 +1,66 @@
 .c-hero {
-	height: vwd(750);
-	background-size: cover;
-	background-position: center;
-	color: #fff;
+	height: vwd(900);
+	box-shadow: 2px 2px 18px 1px rgba(0,0,0,0.1);
+	position: relative;
+	&__image {
+		position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+		background-size: cover;
+		background-position: left;
+		color: #fff;
+		background-repeat: no-repeat;
+		z-index: -1;
+		&:after {
+			content: '';
+			background: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0.2;
+		}
+	}
 	&__container {
 		display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
-    height: 100%;
+    height: 80%;
 	}
 	&__sopratitolo {
 		text-transform: uppercase;
 		font-weight: 300;
 		font-family: $font-default;
+		text-align: center;
+    color: $nero;
+    font-size: vwd(60);
+    padding-top: vwd(50);
 	}
 	&__titolo {
-		font-size: vwd(40);
-		text-align: center;
-		display: inline-flex;
-		color:$blu_scuro;
-		flex-direction: column;
-    align-items: center;
-		color: #fff;
-		&:after {
-			content: "";
-			display: block;
-			height: vwd(3);
-			width: vwd(100);
-			background: $bianco;
-			margin-top: vwd(10);
-		}
+		font-size: vwd(170);
+    color: $marrone;
+    text-align: center;
+		font-family: 'Benedict';
+    font-weight: lighter;
 	}
 }
 
 @include mq-max(bk('tab-down')) {
 	.c-hero {
 		height: vwm(320);
+		&__sopratitolo {
+			font-size: vwm(20);
+			padding-top: vwm(30);
+		}
 		&__titolo {
-			font-size: vwm(40);
-			&:after {
-				height: vwm(3);
-				width: vwm(100);
-				margin-top: vwm(10);
-			}
+			font-size: vwm(50);
+		}
+		.c-col--one-half {
+			width: 50%;
 		}
 	}
 }
